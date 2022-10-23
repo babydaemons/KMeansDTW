@@ -17,7 +17,7 @@ public:
 
 	void  Read(std::istream& istream) {
 		std::vector<Value>& x(*this);
-		for (size_t i = 0; x.size(); ++i) {
+		for (size_t i = 0; i < x.size(); ++i) {
 			x[i].Read(istream);
 		}
 		label = -1;
@@ -25,7 +25,7 @@ public:
 
 	void Write(std::ostream& ostream) const {
 		const std::vector<Value>& x(*this);
-		for (size_t i = 0; x.size(); ++i) {
+		for (size_t i = 0; i < x.size(); ++i) {
 			x[i].Write(ostream);
 		}
 	}
@@ -64,7 +64,7 @@ public:
 public:
 	int label;
 
-private:
+public:
 	static int COLUMNS;
 	static int EXCLUDES;
 	static int DIMENSION;

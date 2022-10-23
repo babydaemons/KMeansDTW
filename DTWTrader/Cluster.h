@@ -35,6 +35,14 @@ public:
 		return count;
 	}
 
+	void CountClear() {
+		count = 0;
+	}
+
+	void CountUp() {
+		++count;
+	}
+
 	void Clear() {
 		Vector& x(*this);
 		total_center = x;
