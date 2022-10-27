@@ -4,8 +4,8 @@ const bool debugging = false;
 
 int main(int argc, char* argv[])
 {
-	if (argc != 7) {
-		std::cerr << "usage: " << argv[0] << " wait level columns exclude input_path output_path" << std::endl;
+	if (argc != 8) {
+		std::cerr << "usage: " << argv[0] << " wait level dimension columns exclude input_path output_path" << std::endl;
 		return -1;
 	}
 
@@ -15,19 +15,24 @@ int main(int argc, char* argv[])
 	const int level = atoi(argv[2]);
 	if (debugging) std::cout << "level = " << level << std::endl;
 
-	const int columns = atoi(argv[3]);
+	const int dimension = atoi(argv[3]);
+	if (debugging) std::cout << "dimension = " << dimension << std::endl;
+
+	Value::Initialize(dimension);
+
+	const int columns = atoi(argv[4]);
 	if (debugging) std::cout << "columns = " << columns << std::endl;
 
-	const int exclude = atoi(argv[4]);
+	const int exclude = atoi(argv[5]);
 	if (debugging) std::cout << "exclude = " << exclude << std::endl;
 
 	Vector::Initialize(columns, exclude);
 
-	const char* input_path = argv[5];
+	const char* input_path = argv[6];
 	if (debugging) std::cout << "input_path = " << input_path << std::endl;
 	std::ifstream input(input_path, std::ios::binary);
 
-	const char* output_path = argv[6];
+	const char* output_path = argv[7];
 	if (debugging) std::cout << "output_path = " << output_path << std::endl;
 	std::ofstream output(output_path, std::ios::binary);
 
