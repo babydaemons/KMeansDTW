@@ -17,7 +17,6 @@ public:
 				++ROWS;
 			}
 		}
-		max_cluster_changed = ROWS / 64;
 		max_iteration = static_cast<int>(std::ceil(5.0 * std::log2(ROWS)));
 
 		std::mt19937 mt(0x12345678);
