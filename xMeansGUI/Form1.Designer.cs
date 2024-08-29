@@ -1,4 +1,4 @@
-﻿namespace xMeans
+﻿namespace xMeansGUI
 {
 	partial class Form1
 	{

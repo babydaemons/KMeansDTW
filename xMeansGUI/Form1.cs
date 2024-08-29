@@ -6,7 +6,7 @@ using System.IO;
 using System.Linq;
 using System.Windows.Forms;
 
-namespace xMeans
+namespace xMeansGUI
 {
 	public partial class Form1 : Form
 	{
@@ -67,8 +67,8 @@ namespace xMeans
 
 			//xmenas draw
 
-			var xMeans = new Xmeans(points);
-			var kmeansResults = xMeans.Calculation();
+			var xMeansGUI = new Xmeans(points);
+			var kmeansResults = xMeansGUI.Calculation();
 			var cSum = kmeansResults.Sum(x => x.ClusterPoints.Count()); //All Point Number
 
 			//Console.WriteLine("{0}", cSum); //debug

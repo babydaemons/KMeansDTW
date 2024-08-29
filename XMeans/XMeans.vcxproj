@@ -30,7 +30,7 @@
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
     <ProjectGuid>{6F5DCBE5-B235-42D2-8F33-D380577D207C}</ProjectGuid>
-    <RootNamespace>XTrader</RootNamespace>
+    <RootNamespace>XMeans</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -194,7 +194,7 @@
     <ClInclude Include="XMeans.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="XTrader.cpp" />
+    <ClCompile Include="XMeans.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

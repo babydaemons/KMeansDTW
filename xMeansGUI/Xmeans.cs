@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Drawing;
 
-namespace xMeans
+namespace xMeansGUI
 {
 	public class Xmeans
 	{

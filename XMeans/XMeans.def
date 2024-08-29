@@ -1,0 +1,7 @@
+LIBRARY   XMeans
+EXPORTS
+	KMeansInitialize
+	KMeansClear
+	KMeansAppend
+	KMeansClustering
+	KMeansFetch

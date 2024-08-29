@@ -21,6 +21,9 @@
     <ClInclude Include="DataSet.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
+    <ClInclude Include="DTW.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
     <ClInclude Include="KMeans.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
@@ -35,7 +38,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="XTrader.cpp">
+    <ClCompile Include="KMeans.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
   </ItemGroup>
